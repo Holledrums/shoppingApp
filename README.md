@@ -1,6 +1,6 @@
 # Shopping
 
-**[Test this app yourself](github.link)**
+**[Test this app yourself](https://holledrums.github.io/shoppingApp/)**
 
 ---
 
