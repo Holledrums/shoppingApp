@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  width: 100vw;
+  background-color: #f2f3f4;
+}
+/* body layout for products.html */
+#productCart {
+  display: grid;
+  grid:
+    "head head head" 100px
+    "products products cart" 1fr
+    / 30% 30% 30%;
+  gap: 8px;
+}
+/* grid layout on product.html*/
+.head {
+  grid-area: head;
+}
+.products {
+  grid-area: products;
+}
+.cart {
+  grid-area: cart;
+}
+
+/* body layout for cart.html*/
+#cartBody {
+  display: block;
+}
+/* position layout for cart section on cart.html */
+#overview {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
+/* layout for pruducts*/
+#products {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.productCard {
+  width: 350px;
+  height: 500px;
+  padding: 2em;
+  margin: 1.5em;
+  box-shadow: 9px 10px 25px 1px rgba(0, 0, 0, 0.8);
+}
+
+.productCard img {
+  height: 350px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* layout for cart */
+#cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* layout for buttons*/
+button {
+  background-color: rgb(222, 236, 236);
+  border-radius: 15px;
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+button:hover {
+  background-color: rgb(9, 187, 9);
+  box-shadow: 2px 1px 15px -3px #000000;
+}
+/* layout for navigation button */
+#shoppingCart,
+#back {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
